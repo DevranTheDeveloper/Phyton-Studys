@@ -29,7 +29,24 @@
 # states.extend(["Zeyneps","Emines"])
 # print(states)
 
-position = "32"
+# position = "32"
 
-cols = position[0]
-print(cols)
+# cols = position[0]
+# print(cols)
+
+sayi = int(input("Sayı Gir"))
+fax = []
+while sayi > 0:
+    fax.insert(1, sayi)
+    sayi -= 1
+
+def diziyi_carp(dizi):
+    carpim = 1
+    for eleman in dizi:
+        carpim *= eleman
+    return carpim
+
+sonuc = diziyi_carp(fax)
+print(sonuc)
+
+    
